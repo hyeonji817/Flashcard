@@ -1,0 +1,29 @@
+/* src/styles.css */
+:root { font-family: system-ui, -apple-system, "Noto Sans KR", Segoe UI, Roboto, sans-serif; }
+body { margin: 0; background: #f6f7fb; }
+.wrap { max-width: 920px; margin: 0 auto; padding: 24px; }
+.top { display:flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; }
+.pills { display:flex; gap: 8px; flex-wrap: wrap; }
+.pill { background: white; border: 1px solid #e8eaf0; border-radius: 999px; padding: 6px 10px; }
+.card { background: white; border: 1px solid #e8eaf0; border-radius: 16px; padding: 16px; margin-top: 14px; box-shadow: 0 8px 24px rgba(18,25,38,.04); }
+.grid { display:grid; grid-template-columns: 1fr 1fr auto; gap: 10px; }
+@media (max-width: 700px){ .grid{ grid-template-columns: 1fr; } }
+input { padding: 10px 12px; border-radius: 10px; border: 1px solid #d7dbe7; outline:none; }
+.btn { padding: 10px 12px; border-radius: 10px; border: 1px solid #d7dbe7; background: #111827; color: white; cursor: pointer; }
+.btn.ghost { background: white; color: #111827; }
+.btn.danger { background: white; color: #b91c1c; border-color: #f1c5c5; }
+.check { display:flex; gap: 10px; align-items:center; margin-top: 10px; }
+.muted { color: #6b7280; }
+.cards { display:grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+@media (max-width: 900px){ .cards{ grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px){ .cards{ grid-template-columns: 1fr; } }
+
+.flash { border: 1px solid #eef0f7; border-radius: 14px; overflow:hidden; background:#fff; }
+.face { width: 100%; text-align:left; border:0; background: white; cursor:pointer; padding: 14px; min-height: 140px; display:grid; gap: 10px; }
+.meta { display:flex; justify-content: space-between; align-items:center; gap: 10px; }
+.badge { font-weight: 800; padding: 6px 10px; border-radius: 999px; border:1px solid #e8eaf0; }
+.badge.known { background: #ecfdf5; border-color:#a7f3d0; color:#065f46; }
+.badge.unknown { background: #fff7ed; border-color:#fed7aa; color:#9a3412; }
+.hint { color:#6b7280; font-size: 12px; }
+.text { font-size: 18px; font-weight: 700; line-height: 1.35; }
+.actions { display:flex; gap:10px; padding: 12px 14px; border-top:1px solid #eef0f7; flex-wrap: wrap; }
